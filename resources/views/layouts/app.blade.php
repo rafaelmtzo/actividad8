@@ -1,27 +1,25 @@
-<!-- resources/views/layouts/app.blade.php -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Mi aplicación')</title>
-    <!-- Agrega tus estilos CSS aquí -->
+    <title>Aplicación de Superhéroes</title>
+    <!-- Aquí puedes vincular tus hojas de estilo CSS -->
 </head>
 <body>
-    <nav>
-        <!-- Aquí puedes definir tu barra de navegación -->
-        <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="{{ route('superheroes.index') }}">Superhéroes</a></li>
-            <!-- Puedes agregar más enlaces de navegación aquí -->
-        </ul>
-    </nav>
+    <header>
+        <h1>Aplicación de Superhéroes</h1>
+        <!-- Aquí puedes añadir tu navegación si necesitas -->
+    </header>
 
-    <div>
+    <main>
         @yield('content')
-    </div>
+    </main>
 
-    <!-- Agrega tus scripts JS aquí -->
+    <footer>
+        <p>&copy; {{ date('Y') }} Aplicación de Superhéroes</p>
+    </footer>
+
+    <!-- Aquí puedes vincular tus scripts de JavaScript -->
 </body>
 </html>
